@@ -1,0 +1,13 @@
+<%- include('../components/head.ejs', {title : dataDetail.page}); %>
+        <section class="bloc">
+            <div class="bloc__txt">
+                <h1 class="bloc__title"><%= dataDetail.title%></h1>
+                <div class="bloc__paragraph"><%= dataDetail.p%></div>
+                <a class="bloc__next-detail" href="<%=next.url%>"><%=next.title%></a>
+            </div>
+            <picture class="bloc__img">
+                <img src="<%= dataDetail.img%>" alt="<%=dataDetail.title%>">
+            </picture>
+        </section>
+    
+<%- include('../components/footer.ejs'); %>

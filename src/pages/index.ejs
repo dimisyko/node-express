@@ -1,0 +1,17 @@
+<%- include('../components/head.ejs', {title : "home" }); %>
+    <main>
+        <h1>Home</h1>
+        <section class="project">
+            <% data.detailPage.forEach(function(project){ %>
+                <article class="project__post">
+                   <h2><%=project.title%></h2>
+                <a class="project__link" href=<%=project.url%>>
+                <picture class="project__img">
+                    <img src=<%=project.img %> alt=<%=project.title%>>
+                </picture>
+            </a>
+            </article>
+                <% }); %>
+        </section>
+    </main>
+<%- include('../components/footer.ejs'); %>

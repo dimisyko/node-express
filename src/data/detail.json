@@ -1,0 +1,31 @@
+{
+   "detailPage" : [
+        {
+            "id" : 1,
+            "page": "crush",
+            "url" : "project/crush",
+            "val" : "Voir plus detail 1",
+            "title": "Détail Crush",
+            "p": "Contenu de la page detail 1",
+            "img" : "img/crush1.webp"
+        },
+        {
+            "id" : 2,
+            "page": "social_network",
+            "url" : "project/social_network",
+            "val" : "Voir plus detail 2",
+            "title": "Détail Social Network",
+            "p": "Contenu de la page detail 2",
+            "img": "img/2.jpg"
+        },
+        {
+            "id" : 3,
+            "page": "bruvisite",
+            "url" : "project/bruvisite",
+            "val" : "Voir plus detail 3",
+            "title": "Détail Bruvisite",
+            "p": "Contenu de la page detail 3",
+            "img": "img/bruvisite.webp"
+        }
+    ]
+}
