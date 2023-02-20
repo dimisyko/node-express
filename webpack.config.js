@@ -6,7 +6,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
 entry: [
   "./src/assets/js/script.js",
-  "./src/assets/style/style.css"
+  "./src/assets/style/style.scss"
 ],
 
 output: {
@@ -15,14 +15,6 @@ output: {
 },
   module: {
         rules: [
-          {
-            test: /\.pug$/,
-            use: [
-              {
-                loader: 'simple-pug-loader'
-              }
-            ]
-          },
             {
                 test: /\.m?js$/,
                 exclude: /(node_modules|bower_components)/,
@@ -46,14 +38,6 @@ output: {
             generator: {
               filename: 'img/[name][ext]'
             }
-          },
-          {
-            test: /\.webmanifest$/i,
-            use: 'webpack-webmanifest-loader',
-            type: 'asset/resource',
-            generator: {
-                filename: './[contenthash:7][ext]'
-              }
           },
           {
             test: /\.(sa|sc|c)ss$/,
