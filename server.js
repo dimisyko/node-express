@@ -15,7 +15,6 @@ app
 app.get('/', (req, res) => {
     res.render('index', { data })
   })
-
 app.get("/project/:id", (req, res) => {
     const dataDetail = data.detailPage.find( data => data.page === req.params.id)
     if (!dataDetail) res.status(404).render('404')
