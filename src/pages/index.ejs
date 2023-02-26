@@ -1,13 +1,13 @@
-<%- include('../components/head.ejs', {title : "home" }); %>
+<%- include('../components/head.ejs', {title : "Home" }); %>
     <main>
-        <h1>Home</h1>
+        <h1>Works</h1>
         <section class="project">
-            <% data.detailPage.forEach(function(project){ %>
+            <% data.detailPage.forEach(project => { %>
                 <article class="project__post">
                    <h2><%=project.title%></h2>
                 <a class="project__link" href=<%=project.url%>>
                 <picture class="project__img">
-                    <img src=<%=project.img %> alt=<%=project.title%>>
+                  <img src=<%=project.img %> alt=<%=project.title%>>
                 </picture>
             </a>
             </article>

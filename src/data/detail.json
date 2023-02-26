@@ -2,6 +2,7 @@
    "detailPage" : [
         {
             "id" : 1,
+            "category" : "web",
             "page": "crush",
             "url" : "project/crush",
             "val" : "Voir plus detail 1",
@@ -11,6 +12,7 @@
         },
         {
             "id" : 2,
+            "category" : "design",
             "page": "social_network",
             "url" : "project/social_network",
             "val" : "Voir plus detail 2",
@@ -20,6 +22,7 @@
         },
         {
             "id" : 3,
+            "category" : "web",
             "page": "bruvisite",
             "url" : "project/bruvisite",
             "val" : "Voir plus detail 3",
